@@ -1,4 +1,4 @@
-somme paire  -  16.03.2026
+test  -  17.03.2026
 
 ******************************************
 
@@ -12,16 +12,19 @@ somme paire  -  16.03.2026
 6     c EST_DU_TYPE NOMBRE
 7   DEBUT_ALGORITHME
 8     i PREND_LA_VALEUR 0
-9     AFFICHER "entrer le nombre de case du tableau"
-10    LIRE m
-11    TANT_QUE (i<m) FAIRE
-12      DEBUT_TANT_QUE
-13      LIRE N[i]
-14      FIN_TANT_QUE
-15    c PREND_LA_VALEUR 0
-16    SI (N[i]%2==0) ALORS
-17      DEBUT_SI
-18      c PREND_LA_VALEUR c+1
-19      FIN_SI
-20    AFFICHER c
-21  FIN_ALGORITHME
+9     c PREND_LA_VALEUR 0
+10    AFFICHER "entrer le nombre de case du tableau"
+11    LIRE m
+12    TANT_QUE (i<m) FAIRE
+13      DEBUT_TANT_QUE
+14      LIRE N[i]
+15      SI (N[i]%2==0) ALORS
+16        DEBUT_SI
+17        c PREND_LA_VALEUR c+1
+18        FIN_SI
+19      i PREND_LA_VALEUR i+1
+20      FIN_TANT_QUE
+21    AFFICHER "dans ce tableau, il y a  "
+22    AFFICHER c
+23    AFFICHER "  nombres paires"
+24  FIN_ALGORITHME
